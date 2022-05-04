@@ -7,7 +7,7 @@ import {FaPinterest} from "react-icons/fa"
 import {AiFillFacebook} from "react-icons/ai"
 import {FaTwitter} from "react-icons/fa"
 
-const footer = () => {
+const Footer = () => {
   return (
     <div className={styles.maindiv}>
       <div className={styles.emaildiv}>
@@ -134,4 +134,4 @@ const footer = () => {
   )
 }
 
-export default footer
+export default Footer
