@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.family{
+    font-family: 'Open Sans', sans-serif;
+}
+.changeImg{
+    width: 100%;
+    cursor:pointer;
+    border: 1px solid white;
+}
+.changeImg:hover{
+    border: 1px solid black;
+}
+.title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    letter-spacing:.12rem;
+    margin-bottom: 5px;
+}
+.online{
+    font-family: 'Open Sans', sans-serif;
+    color:#5c5c5f;
+    font-size: 12px;
+    letter-spacing:.09rem;
+}
+.color{
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+    margin: 9px 0px;
+}
+.color>span{
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+    color:#5c5c5f;
+}
+.select{
+    width: 88px;
+    color: #505050;
+    padding: 10px;
+    display: block;
+    outline: none;
+    height: 43px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    margin-bottom: 40px;
+}
+
+.button{
+    width: 85%;
+    cursor: pointer;
+    height: 47px;
+    background-color: #4b5666;
+    color:white;
+    border: 1px solid #4b5666;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}
+.button:hover{
+    color:#4b5666;
+    background-color: white;
+    border: 1px solid #4b5666;
+}
