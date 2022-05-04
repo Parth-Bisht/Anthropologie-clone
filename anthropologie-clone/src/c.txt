@@ -11,7 +11,7 @@
       "id":2,
       "img1": "https://images.urbndata.com/is/image/Anthropologie/66667015_066_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
       "img2":"https://images.urbndata.com/is/image/Anthropologie/66667015_066_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      "title": "FREECITY Super-VIntage Long-Sleeve",
+      "title": "FREECITY Super-VIntage Long-Sleeve Tee",
       "price":"$215.00"
     },
     {
@@ -209,21 +209,6 @@
       "img2":"https://images.urbndata.com/is/image/Anthropologie/4112916210039_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=720",
       "title": "Pilcro Sustainable Double-V Tee",
       "price":"$215.00"
-    },
-    {
-      "id":31,
-      "img1": "https://images.urbndata.com/is/image/Anthropologie/68099332_011_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      "img2":"https://images.urbndata.com/is/image/Anthropologie/68099332_011_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-      "title": "Maeve Mock Neck Top",
-      "price":"$195.00"
-    },
-    {
-      "id":32,
-      "img1": "https://images.urbndata.com/is/image/Anthropologie/4112920000004_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=720",
-      "img2":"https://images.urbndata.com/is/image/Anthropologie/4112920000004_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-      "title": "Pilcro Sustainable Double-V Tee",
-      "price":"$215.00"
     }
-
   ]
 }

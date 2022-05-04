@@ -1,0 +1,34 @@
+.quick{
+    /* border: 1px solid red; */
+    padding: 5px;
+    width: 63%;
+    height: 25px;
+    position: absolute;
+    bottom: 79px;
+    display: none;
+    font-size: 14px;
+    padding-left: 35%;
+    padding-top: 15px;
+    background-color: white;
+    opacity:0.5;
+}
+
+.image:hover .quick{
+    display: block;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+select{
+    height: 35px;
+    border-radius: 5px;
+}
+.h{
+    font-size: 25px;
+}
+title{
+    font-size: 10px;
+}
