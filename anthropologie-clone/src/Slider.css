@@ -26,6 +26,9 @@
 .MultiCarousel .MultiCarousel-inner .item > .card:hover .img2 {
   display: inline;
 }
+.MultiCarousel .MultiCarousel-inner .item > .card:hover p {
+  color: #33999a;
+}
 .MultiCarousel .MultiCarousel-inner .item > div {
   text-align: center;
   width: 205px;
