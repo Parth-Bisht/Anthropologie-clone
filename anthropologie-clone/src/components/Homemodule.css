@@ -11,12 +11,97 @@
     height: auto;
     box-sizing: border-box;
     display: grid;
-    gap:30px;
+    gap:50px;
 }
-/* .full{
-    height: 60%;
-    width: 25%;
-} */
+.fullBtn{
+    height: 30px;
+   width: 812px;
+
+}
+.btn1{
+    height: auto;
+    width:auto;
+    background-color: white;
+    position: absolute;
+    letter-spacing: 0.06rem;
+    left: 390px;
+    color: #26262C;
+    top: 530px;
+    font: 0.68rem / 0.68 "Avenir Book", sans-serif;
+    padding: 15px 20px;
+    
+}
+.btn2{
+    height: auto;
+    width:auto;
+    background-color: white;
+    position: absolute;
+    letter-spacing: 0.06rem;
+    left: 200px;
+    color: #26262C;
+    top: 1130px;
+    font: 0.68rem / 0.68 "Avenir Book", sans-serif;
+    padding: 15px 20px;
+    
+}
+.btn3{
+    height: auto;
+    width:auto;
+    background-color: white;
+    position: absolute;
+    letter-spacing: 0.06rem;
+    left: 600px;
+    color: #26262C;
+    top: 1130px;
+    font: 0.68rem / 0.68 "Avenir Book", sans-serif;
+    padding: 15px 20px;
+    
+}
+.btn4, .btn45, .btn44, .btn55, .btn22, .btn33, .btn10{
+    height: auto;
+    width:auto;
+    background-color: white;
+    position: absolute;
+    letter-spacing: 0.06rem;
+    left: 300px;
+    color: #26262C;
+    top: 1700px;
+    font: 0.68rem / 0.68 "Avenir Book", sans-serif;
+    padding: 15px 20px;
+    
+}
+
+.btn45{
+    left: 435px;
+}
+.btn22{
+    left:1000px;
+    top: 395px;
+}
+.btn33{
+    left:1000px;
+    top: 810px;
+}
+.btn44{
+    left:1025px;
+    top: 1260px;
+}
+.btn55{
+    left:1025px;
+    top: 1710px;
+}
+.btn10{
+    left:570px;
+    top: 2320px;
+}
+.firsta{
+    color: #26262C;
+    text-decoration: none;
+}
+.firsta:hover{
+    text-decoration-line: underline;
+}
+
 .up-right{
     display: grid;
     gap:20px;
@@ -52,4 +137,40 @@
 .middle > img, .middle{
     height: 558px;
     width: 1228px;
+}
+
+p{
+    color: #26262C;
+    font-weight: lighter;
+    font-stretch: normal;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    font-family: "Spectral Extra Light", serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.udiv{
+    border-bottom: 1px solid #464649;
+    margin-bottom: 30px;
+}
+.exImg > img{
+    height: 370px;
+    width: 396px;
+}
+.exInfo {
+    display: flex;
+    gap: 20px;
+}
+.h3div{
+    box-sizing: border-box;
+}
+.atag > a{
+    color: #167a92;
+}
+.atag > a:hover{
+    text-decoration: none;
+}
+.h3{
+    font: 1.4rem/1.5 Avenir Book,sans-serif;
+    font-style: normal;
 }

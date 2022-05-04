@@ -6,21 +6,58 @@ const Home = () => {
     <div className='home-container'>
         <div className='upper'>
             <div className='upleft'>
-                <div className='full'><img src="https://images.ctfassets.net/5de70he6op10/6O4o9CPoov1N3SUAzpVx0J/5a33425eac3c498bc66a2d0aa4795c67/050222_HPG_LS_M1.jpg?w=1756&q=80&fm=webp"/></div>
+                <div className='full'><img src="https://images.ctfassets.net/5de70he6op10/6O4o9CPoov1N3SUAzpVx0J/5a33425eac3c498bc66a2d0aa4795c67/050222_HPG_LS_M1.jpg?w=1756&q=80&fm=webp"/><div className='fullBtn'><div className='btn1'><a href="" className='firsta'>shop new arrivals</a></div></div></div>
                 <div className='mid'>
-                    <div className='midimage'><img src="https://images.ctfassets.net/5de70he6op10/2cIhOhx0EenQ1hIURAWLK7/7f322ffde6eb24472f9454e18f457027/050222_HPG_2UP_Dresses.jpg?w=856&q=80&fm=webp"/> </div>
-                    <div className='midimage'><img src="https://images.ctfassets.net/5de70he6op10/j4jfRLSCojibA9tLTz7tq/fe904a67d777bf6af9da224f0e5c227f/050222_HPG_2UP_Sets.jpg?w=856&q=80&fm=webp" /></div>
+                    <div className='midimage'><img src="https://images.ctfassets.net/5de70he6op10/2cIhOhx0EenQ1hIURAWLK7/7f322ffde6eb24472f9454e18f457027/050222_HPG_2UP_Dresses.jpg?w=856&q=80&fm=webp"/><div className='midBtn'><div className='btn2'><a href="" className='firsta'>shop dresses</a></div></div></div>
+                    <div className='midimage'><img src="https://images.ctfassets.net/5de70he6op10/j4jfRLSCojibA9tLTz7tq/fe904a67d777bf6af9da224f0e5c227f/050222_HPG_2UP_Sets.jpg?w=856&q=80&fm=webp" /><div className='midBtn'><div className='btn3'><a href="" className='firsta'>shop skirts</a></div></div></div>
                 </div>
-                <div className='full'><img src="https://images.ctfassets.net/5de70he6op10/4L4MxwDigk4N40JIiWpXeq/264edf2c0e8af695014b8e0c7ad392dd/050222_HPG_LS_M2.jpg?w=1756&q=80&fm=webp"/></div>
+                <div className='full'><img src="https://images.ctfassets.net/5de70he6op10/4L4MxwDigk4N40JIiWpXeq/264edf2c0e8af695014b8e0c7ad392dd/050222_HPG_LS_M2.jpg?w=1756&q=80&fm=webp"/>
+                    <div className='two'>
+                        <div className='btn4'><a href="" className='firsta'>raise a glass</a></div>
+                        <div className='btn45'><a href="" className='firsta'>get the cocktail recipes</a></div>
+                    </div>
+                </div>
             </div>
             <div className='up-right'>
-                <div><img src="https://images.ctfassets.net/5de70he6op10/6FzBOZH3ftSw31v7wApRE9/96d12fc9fedd4ae4154d909c021c75ad/050222_HPG_RR_Furniture.jpg?w=856&q=80&fm=webp"/></div>
-                <div><img src="https://images.ctfassets.net/5de70he6op10/1QeC1AgqnnSUUNUm1L8Cop/26d6959e95bb51ff30016138680010bc/050222_HPG_RR_Candles.jpg?w=856&q=80&fm=webp"/></div>
-                <div><img src="https://images.ctfassets.net/5de70he6op10/3Fp3TqyVqgSjPQZthY3sFD/9386f17ed897837b78eb461bf903c72a/050222_HPG_RR_Swim.jpg?w=856&q=80&fm=webp"/></div>
-                <div><img src="https://images.ctfassets.net/5de70he6op10/5MuarHK2smpFuUB28seiUk/50482d40225937b5dcd47d597990c52d/050222_HPG_RR_Bedding.jpg?w=856&q=80&fm=webp"/></div>
+                <div><img src="https://images.ctfassets.net/5de70he6op10/52bbfxp2kzymVZ339bWds3/8ba1fffd453536dfd180e1f2dccd6d19/050222_HPG_RR_Kitchen_Dining.jpg?w=856&q=80&fm=webp"/><div className='rightBtn'><div className='btn22'><a href="" className='firsta'>shop kitchen & dining</a></div></div></div>
+                <div><img src="https://images.ctfassets.net/5de70he6op10/21TPmULTbJZbOoJvpDT6hF/cc9481d1d4b7952946247c563f7a742c/050222_HPG_RR_MarkSikes.jpg?w=856&q=80&fm=webp"/><div className='rightBtn'><div className='btn33'><a href="" className='firsta'>shop the Mark D. Sikes collection</a></div></div></div>
+                <div><img src="https://images.ctfassets.net/5de70he6op10/3Fp3TqyVqgSjPQZthY3sFD/9386f17ed897837b78eb461bf903c72a/050222_HPG_RR_Swim.jpg?w=856&q=80&fm=webp"/><div className='rightBtn'><div className='btn44'><a href="" className='firsta'>shop swim</a></div></div></div>
+                <div><img src="https://images.ctfassets.net/5de70he6op10/znSM83ZPZIn5qwRZyUZRR/65849a331166953a2cc1aa24c862afcd/050222_HPG_RR_Bags.jpg?w=856&q=80&fm=webp"/><div className='rightBtn'><div className='btn55'><a href="" className='firsta'>shop bags</a></div></div></div>
             </div>
         </div>
-        <div className='middle'><img src="https://images.ctfassets.net/5de70he6op10/7DEijhrVDU6Yq9fW3H4NYu/1ccd807faed448b9ca75bac79944b9c5/050222_HPG_LS_M3.jpg?w=2694&q=80&fm=webp"/></div>
+        <div className='middle'><img src="https://images.ctfassets.net/5de70he6op10/7DEijhrVDU6Yq9fW3H4NYu/1ccd807faed448b9ca75bac79944b9c5/050222_HPG_LS_M3.jpg?w=2694&q=80&fm=webp"/><div className='rightBtn'><div className='btn10'><a href="" className='firsta'>visit the getaway shop</a></div></div></div>
+
+        <div className='lower'>
+            <div className='exploreData'>
+                <div className='udiv'><p>More to Explore</p></div>
+                <div className='exInfo'>
+                    <div>
+                        <div className='exImg'><img src="https://images.ctfassets.net/5de70he6op10/6fqnRygHuJSypTKaxojLDC/62dd14b7b808b58a09012c535a6bbb8d/041122_HPG_MTE_DenimShop.jpg?w=856&q=80&fm=webp"/></div>
+                        <div>
+                            <div><h2>Good Jeans: The Denim Fit Guide</h2></div>
+                            <div><h3>Introducing the perfect pairs for every wear. From rise to size, here's how to find your new favorite jeans.</h3></div>
+                        </div>
+                        <div className='atag'><a href="">find your fit</a></div>
+                    </div>
+                    <div>
+                        <div className='exImg'><img src="https://images.ctfassets.net/5de70he6op10/5z1SzJjtkNuitP2HKuc7Ww/4f0f76621a8587e50d4b9e96a30edf36/041122_HPG_MTE_GreaterGood.jpg?w=856&q=80&fm=webp"/></div>
+                        <div>
+                            <div><h2><u>A</u> Greater Good</h2></div>
+                            <div className='h3div'><h3>Our priority: to be a force for good, a greater good, in better service of our planet, its people, and our products.</h3></div>
+                        </div>
+                        <div className='atag'><a href="">learn more about our journey</a></div>
+                    </div>
+                    <div>
+                        <div className='exImg'><img src="https://images.ctfassets.net/5de70he6op10/54SroRrXp9QpYMEn5Zqrvp/c91bcee7f1aad1f53f8ce017576e8985/041122_HPG_MTE_SpringHomeJournal.jpg?w=856&q=80&fm=webp" /></div>
+                        <div>
+                            <div><h2>The Story of Home</h2></div>
+                            <div><h3>From front (door) to back(yard), we're reading between the herringbone-inspired lines and handwoven cords of our outdoor collection for spring.</h3></div>
+                        </div>
+                        <div className='atag'><a href="">shop the collection</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
   )
 }
