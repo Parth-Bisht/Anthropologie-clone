@@ -3,6 +3,7 @@ import Cloth from './compoments/Cloth';
 import Acordian from './compoments/Acordian';
 import Footer from './compoments/Footer';
 import Navbar from './compoments/Navbar';
+import Shoe from './compoments/Shoe';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Navbar/>
       <div style={{display:"flex"}}>
         <Acordian/>
-        <Cloth/>
+        {/* <Cloth/> */}
+        <Shoe/>
       </div>
       <Footer/>
     </div>
