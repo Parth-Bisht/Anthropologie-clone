@@ -71,7 +71,7 @@ function Navbar() {
       </div>
 
       {/* Sign-In/sign-up part */}
-
+    
       <div
         className="d-flex justify-content-end align-items-center py-1"
         style={{ background: "#f7f6f2" }}
