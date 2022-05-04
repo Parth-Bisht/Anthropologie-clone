@@ -3,7 +3,8 @@ export const ProductCard = (props) => {
     <div>
       <div className="item">
         <div className="card">
-          <img src={props.cardData.img1} />
+          <img className="img1" src={props.cardData.img1} />
+          <img className="img2" src={props.cardData.img2} />
           <p>{props.cardData.title}</p>
         </div>
       </div>

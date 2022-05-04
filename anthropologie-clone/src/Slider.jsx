@@ -119,7 +119,7 @@ export const Slider = (props) => {
           <div
             className="MultiCarousel"
             data-items="1,2,4,5"
-            data-slide="1"
+            data-slide="2"
             id="MultiCarousel"
             data-interval="1000"
           >

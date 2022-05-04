@@ -16,12 +16,23 @@
   height: 300px;
   width: 205px;
 }
+.MultiCarousel .MultiCarousel-inner .item > .card > .img2 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.MultiCarousel .MultiCarousel-inner .item > .card:hover .img2 {
+  display: inline;
+}
 .MultiCarousel .MultiCarousel-inner .item > div {
   text-align: center;
   width: 205px;
   margin: 10px;
   color: #666;
   border: 1px solid white;
+  cursor: pointer;
 }
 .MultiCarousel .leftLst,
 .MultiCarousel .rightLst {
