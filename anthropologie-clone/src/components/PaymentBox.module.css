@@ -33,3 +33,25 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.applyBtn{
+    color:#4b5666;
+    background-color: white;
+    border: 1px solid #4b5666;
+    width: 30%;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    margin-left:20px
+
+}
+.applyBtn:hover{
+    background-color: #4b5666;
+    color:white;
+    border: 1px solid #4b5666;
+}
+.promoCode{
+    width: 60%;
+    height: 40px;
+    border: 1px solid grey;
+    outline-color: #167a92;
+}
