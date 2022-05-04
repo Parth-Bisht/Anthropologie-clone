@@ -1,0 +1,55 @@
+.upper{
+    display: flex;
+    gap: 22px;
+   
+}
+.home-container{
+    padding: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    display: grid;
+    gap:30px;
+}
+/* .full{
+    height: 60%;
+    width: 25%;
+} */
+.up-right{
+    display: grid;
+    gap:20px;
+}
+.upleft{
+    display: grid;
+    gap: 15px;
+}
+
+.full > img, .full{
+    width: 812px ;
+    height: 568px;
+}
+
+.up-right > div > img, .up-right > div{
+    height: 420px;
+    width: 392px;
+}
+
+.mid{
+    display:flex;
+    gap:20px;
+    
+}
+.midimage > img, .midimage{
+    width: 396px;
+    height: 576px;
+}
+/* .midimage{
+    height: 400px;
+    width: 300px;
+} */
+.middle > img, .middle{
+    height: 558px;
+    width: 1228px;
+}
