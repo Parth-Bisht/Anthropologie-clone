@@ -18,7 +18,6 @@ const Cloth = () => {
         <div>
         <div className={styles.flex}>
             <div className={styles.h}>Women's Clothing</div>
-
             <div>
             <label>Sort: </label>
             <select>

@@ -243,7 +243,7 @@ const Acordian = () => {
 
 </div>
 
-       
+
     </div>
   )
 }
