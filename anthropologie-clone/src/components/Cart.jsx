@@ -4,6 +4,7 @@ import CartItem from './CartItem';
 import PaymentBox from './PaymentBox';
 
 const Cart = () => {
+  let data = JSON.parse(localStorage.getItem("cartData")) || [];
   return (
     <div>
       <div className="container border py-3" style={{maxWidth:"1325px",position:"relative"}}>
@@ -21,8 +22,11 @@ const Cart = () => {
                 <p className="my-0">Total Price</p>
             </div>
         </div>
-        <CartItem/>
-        <CartItem/>
+        {data.map((item)=>{
+          return <CartItem key={item.id} ele={item}/>
+        })}
+        
+        {/* <CartItem/> */}
         <PaymentBox/>
       </div>
     </div>

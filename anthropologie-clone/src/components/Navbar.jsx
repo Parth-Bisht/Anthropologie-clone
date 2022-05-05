@@ -4,6 +4,7 @@ import { RiGlobeLine } from "react-icons/ri";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { AiOutlineUser, AiOutlineSearch } from "react-icons/ai";
 import { BsHandbag } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -128,24 +129,24 @@ function Navbar() {
               </button>
             </div>
           </form>
-          <BsHandbag color="#2e80a1" fontSize="23px" />
+          <Link to="/cart"><BsHandbag color="#2e80a1" fontSize="23px" /></Link>
         </div>
       </div>
 
             <div className="d-flex"
         style={{ borderBottom: "1px solid #d3d3d3" }} >
             <ul className={styles.lists}>
-                <li><a href=""> New!</a></li>
-                <li><a href=""> Gift for Mom</a></li>
-                <li><a href=""> Dresses</a></li>
-                <li><a href=""> Clothing</a></li>
-                <li><a href=""> Shoes</a></li>
-                <li><a href=""> Accessories</a></li>
-                <li><a href=""> Home & Furniture</a></li>
-                <li><a href=""> Beauty & Wellness</a></li>
-                <li><a href=""> Garden & Outdoor</a></li>
-                <li><a href=""> Weddings</a></li>
-                <li><a href=""> Sale</a></li>
+            <li><Link to=""> New!</Link></li>
+                <li><Link to=""> Gift for Mom</Link></li>
+                <li><Link to=""> Dresses</Link></li>
+                <li><Link to="/cloths"> Clothing</Link></li>
+                <li><Link to="/shoes"> Shoes</Link></li>
+                <li><Link to=""> Accessories</Link></li>
+                <li><Link to=""> Home & Furniture</Link></li>
+                <li><Link to=""> Beauty & Wellness</Link></li>
+                <li><Link to=""> Garden & Outdoor</Link></li>
+                <li><Link to=""> Weddings</Link></li>
+                <li><Link to=""> Sale</Link></li>
             </ul>
             </div>
 

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./PaymentBox.module.css";
 
 const PaymentBox = () => {
+  let data = JSON.parse(localStorage.getItem("cartData")) || [];
   return (
     <div
       style={{ position: "absolute", width: "26%", top: "20px", right: "47px" }}

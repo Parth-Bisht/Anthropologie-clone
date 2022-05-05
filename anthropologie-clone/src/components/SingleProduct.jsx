@@ -2,7 +2,7 @@ import React from "react";
 import styles from './SingleProduct.module.css';
 import { AiFillStar } from "react-icons/ai";
 
-const SingleProduct = () => {
+const SingleProduct = ({id,location}) => {
   const [data,setData]=React.useState({})
   const [sidedata,setSidedata] = React.useState([]);
   const handleChange = (e) => {
@@ -11,7 +11,6 @@ const SingleProduct = () => {
       ...data,
       [inputName]:e.target.value
     })
-    console.log(inputName,e.target.value);
   };
 
   const [mainimg,setMainimg] = React.useState("");
@@ -19,7 +18,7 @@ const SingleProduct = () => {
     setMainimg(e.target.src);
   }
   React.useEffect(()=>{
-    fetch(`http://localhost:3001/cloths/5`)
+    fetch(`http://localhost:3001/${location}/${id}`)
     .then((res)=>res.json())
     .then((d)=>{
       setData(d);
@@ -38,7 +37,6 @@ const SingleProduct = () => {
     let cartData = JSON.parse(localStorage.getItem("cartData")) || []
     cartData.push(data);
     localStorage.setItem("cartData",JSON.stringify(cartData))
-    console.log(cartData);
   }
   return (
     <div>
