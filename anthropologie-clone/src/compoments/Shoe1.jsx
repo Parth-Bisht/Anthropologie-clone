@@ -28,11 +28,11 @@ function Shoe1({ item }) {
                     width: "100%",
                     // border:" 1px solid red"
                 }}
-                src={ig ? item.img3 : item.img4}
+                src={ig ? item.img1 : item.img2}
                 alt="image"
                 />
-                <p>{item.title1} </p>
-                <p>{item.price1}</p>
+                <p>{item.title} </p>
+                <p>{item.price}</p>
                 <div className={styles.quick}>Quickshop</div>
             </div>
         </div>

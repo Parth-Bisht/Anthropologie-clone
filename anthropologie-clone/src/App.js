@@ -1,20 +1,18 @@
+import { Route,Routes } from 'react-router-dom';
 import './App.css';
-import Cloth from './compoments/Cloth';
-import Acordian from './compoments/Acordian';
-import Footer from './compoments/Footer';
-import Navbar from './compoments/Navbar';
-import Shoe from './compoments/Shoe';
+import ProductsPage from './pages/ProductsPage';
+import Cartpage from "./pages/Cartpage"
+import SingleproductPage from "./pages/SingleproductPage"
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <div style={{display:"flex"}}>
-        <Acordian/>
-        {/* <Cloth/> */}
-        <Shoe/>
-      </div>
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<SingleproductPage/>}></Route>
+        <Route path="/cart" element={<Cartpage/>}></Route>
+        <Route path="/:products" element={<ProductsPage/>}></Route>
+      </Routes>
     </div>
   );
 }

@@ -3,21 +3,22 @@ import axios from "axios";
 import Shoe1 from "./Shoe1";
 import styles from "./Shoe.module.css";
 
-const Shoe = () => {
+const Shoe = ({products}) => {
+    console.log(products)
     const [shoes, setShoes] = useState([]);
 
     const getData = () => {
-        axios.get("http://localhost:3001/shoes").then((res) => {
+        axios.get(`http://localhost:3001/${products}`).then((res) => {
         setShoes(res.data);
         });
     };
     useEffect(() => {
         getData();
-    }, []);
+    }, [products]);
     return (
         <div>
         <div className={styles.flex}>
-            <div className={styles.h}>Women's Shoes</div>
+            <div className={styles.h}>Women's {products}</div>
             <div>
             <label>Sort: </label>
             <select>
