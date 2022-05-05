@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import $ from "jquery";
-import Popper from "popper.js";
+// import Popper from "popper.js";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./Slider.css";
 import { ProductCard } from "./ProductCard";

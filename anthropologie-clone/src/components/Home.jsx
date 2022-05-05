@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Slider } from './Slider'
 import './Homemodule.css'
 
 const Home = () => {
+    const [data, setdata]=useState([])
+    const [data1, setdata1]=useState([])
+    useEffect(()=>{
+        fetch(` http://localhost:3001/cloths`)
+        .then((res)=>res.json())
+        .then((d)=>setdata(d))
+
+        fetch(` http://localhost:3001/shoes`)
+        .then((res)=>res.json())
+        .then((d)=>setdata1(d))
+    },[])
   return (
     <div className='home-container'>
         <div className='upper'>
@@ -28,7 +39,8 @@ const Home = () => {
         </div>
         <div className='middle'><img src="https://images.ctfassets.net/5de70he6op10/7DEijhrVDU6Yq9fW3H4NYu/1ccd807faed448b9ca75bac79944b9c5/050222_HPG_LS_M3.jpg?w=2694&q=80&fm=webp"/><div className='rightBtn'><div className='btn10'><a href="" className='firsta'>visit the getaway shop</a></div></div></div>
 
-        <Slider />
+        <Slider data={data} />
+        <Slider data={data1} />
         <div className='lower'>
             <div className='exploreData'>
                 <div className='udiv'><p>More to Explore</p></div>
