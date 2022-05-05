@@ -3,21 +3,25 @@ import styles from './SingleProduct.module.css';
 import { AiFillStar } from "react-icons/ai";
 
 const SingleProduct = () => {
+  const [data,setData]=React.useState({})
   const handleChange = (e) => {
     console.log(e.target.value);
   };
- 
-  const data = {
-    id: 1,
-    img1: "https://images.urbndata.com/is/image/Anthropologie/66667379_042_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    img2: "https://images.urbndata.com/is/image/Anthropologie/66667379_042_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=720",
-    title: "FREECITY Super-Vintage Sweat Pants",
-    price: "$235.00",
-  };
-  const [mainimg,setMainimg] = React.useState(data.img2);
+
+  const [mainimg,setMainimg] = React.useState("");
   const handleImage = (e)=>{
     setMainimg(e.target.src);
   }
+  React.useEffect(()=>{
+    console.log("Heoeoeoeeo");
+    fetch(`http://localhost:3001/cloths/5`)
+    .then((res)=>res.json())
+    .then((d)=>{
+      setData(d);
+      setMainimg(d.img2);
+    })
+    console.log(mainimg);
+  },[])
   return (
     <div>
       <div

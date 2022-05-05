@@ -6,6 +6,7 @@ import SingleproductPage from './pages/SingleproductPage';
 function App() {
   return (
     <div className="App">
+    
      <SingleproductPage/>
     </div>
   );
