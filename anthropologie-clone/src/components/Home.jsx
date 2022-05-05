@@ -1,4 +1,5 @@
 import React from 'react'
+import { Slider } from './Slider'
 import './Homemodule.css'
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
         </div>
         <div className='middle'><img src="https://images.ctfassets.net/5de70he6op10/7DEijhrVDU6Yq9fW3H4NYu/1ccd807faed448b9ca75bac79944b9c5/050222_HPG_LS_M3.jpg?w=2694&q=80&fm=webp"/><div className='rightBtn'><div className='btn10'><a href="" className='firsta'>visit the getaway shop</a></div></div></div>
 
+        <Slider />
         <div className='lower'>
             <div className='exploreData'>
                 <div className='udiv'><p>More to Explore</p></div>
