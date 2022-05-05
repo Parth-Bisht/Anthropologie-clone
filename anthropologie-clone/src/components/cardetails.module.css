@@ -1,0 +1,91 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.main {
+    width: 61%;
+    background-color: #ffffff;
+     
+    margin-right: 5%;
+    margin-top: 55px;
+  
+}
+.card{
+    font-size: 20px;
+    font-weight: 600px;
+    margin:0px 0px 0px 10px;
+}
+ 
+.box1 {
+    font-size: 14px;
+    margin-bottom: 2px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+ 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.box2 {
+    height: 46px;
+    width: 106vh;
+    box-sizing: border-box;
+    border: 1px solid #939395;
+    padding: 6px;
+    outline: none;
+    font-size: 16px;
+    margin: 4px 0px 15px 0px;
+}
+
+.box2:focus {
+    border-radius: 5px;
+    border: 2px solid teal;
+}
+.box3 {
+    height: 46px;
+    width: 40vh;
+    box-sizing: border-box;
+    padding: 6px;
+    outline: none;
+    font-size: 16px;
+    margin: 4px 0px 15px 0px;
+    border: 1px solid #939395;
+    border-radius: 5px;
+}
+
+.box3:focus {
+    border: 2px solid teal;
+    border-radius: 5px;
+}
+.box4{
+    border  : 1px solid #c3c3c3;
+    padding: 25px 10px 5px 20px;
+    line-height: 8px;
+}
+.box4>h5{
+    margin-bottom: 20px;
+ 
+}
+.box5{
+    border:1px solid;
+    padding: 15px; 
+}
+.box6{
+    width: 75px;
+    margin-left: 10px;
+}
+
+ 
+.main2 {
+    width: 25%;
+ 
+    margin-top: 55px;
+    
+}

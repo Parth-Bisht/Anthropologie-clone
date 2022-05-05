@@ -1,9 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './Cart.module.css'
 import CartItem from './CartItem';
-import PaymentBox from './PaymentBox';
+import PaymentBox from './Payment';
 
 const Cart = () => {
+  const navigate = useNavigate();
+  const handlClick = ()=>{
+    navigate("/addressPage")
+  }
+
   let data = JSON.parse(localStorage.getItem("cartData")) || [];
   return (
     <div>
@@ -27,7 +33,7 @@ const Cart = () => {
         })}
         
         {/* <CartItem/> */}
-        <PaymentBox/>
+        <PaymentBox clickMe={handlClick} title="PROCEED TO CHECKOUT"/>
       </div>
     </div>
   )
