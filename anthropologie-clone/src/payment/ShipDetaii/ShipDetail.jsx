@@ -1,7 +1,10 @@
 import React from 'react'
+// import { Link } from 'react-router-dom'
+import PaymentBox from '../payment/Payment'
 import style from './ShipDetail.module.css'
 
 const ShipDetail = () => {
+  
   return (<>
     <div className={style.container}>
       <div className={style.main}>
@@ -66,7 +69,8 @@ const ShipDetail = () => {
       {/* <!-- ------------------------second part----------------------------------  --> */}
 
       <div className={style.main2}>
-
+       <PaymentBox title="Continue to Payment"/>
+     {/* <Link to="/Cardetails">cartdetails</Link> */}
       </div>
     </div>
   </>)

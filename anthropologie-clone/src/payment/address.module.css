@@ -1,8 +1,6 @@
-* {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
-
-
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;  
+  
 }
 
 .container {
@@ -32,11 +30,8 @@ hr.new1 {
 }
 
 .main2 {
-    width: 25%;
-    height: 600px;
-    background-color: #fafafa;
-    margin-top: 55px;
-    border: 1px solid;
+    width: 25%; 
+    margin-top: 90px;   
 }
 
 .box1 {
@@ -118,19 +113,14 @@ hr.new1 {
  
 
 }
-
-
-
-
+ 
 .box5 {
     height: 14px;
     width: 14px;
     margin: 4px 5px 15px 0px;
 
 }
-
-
-
+ 
 .box7 {
     height: 46px;
     width: 55vh;
@@ -146,6 +136,17 @@ hr.new1 {
 .box7:focus {
     border: 2px solid teal;
     border-radius: 5px;
+}
+.boxs4{
+    
+    width: 114vh;
+    padding: 8px 0px 0px 20px; 
+   
+  
+    border: 1px solid;
+    margin: 4px 0px 20px 4.6%;
+     
+    background:#f7f6f2;
 }
 
 

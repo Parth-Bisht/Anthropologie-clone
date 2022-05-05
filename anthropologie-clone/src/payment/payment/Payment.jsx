@@ -6,7 +6,7 @@ const PaymentBox = (props) => {
  
   return (
     <div
-      style={{ position: "absolute", width: "26%", top: "20px", right: "47px" }}
+      style={{ position: "absolute", width: "26%", right: "47px" }}
     >
       <div className="d-flex align-items-center justify-content-between mb-2">
         <h2 className={styles.orderSummary}>Order Summary</h2>
@@ -30,7 +30,7 @@ const PaymentBox = (props) => {
           <p style={{ color: "black" }}>$450</p>
         </div>
         <div>
-          <button className={styles.button}  >{props.title}</button>
+          <button className={styles.button} onClick={()=>props.clickMe()} >{props.title } </button>
           <div className={`d-flex justify-content-center ${styles.payPal}`}>
             <img
               height="25px"

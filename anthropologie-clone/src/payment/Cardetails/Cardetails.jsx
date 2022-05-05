@@ -1,8 +1,12 @@
-import React from 'react'
-// import PaymentBox from '../payment/Payment'
+import React, { useState } from 'react'
+import PaymentBox from '../payment/Payment'
 import style from './cardetails.module.css'
+ 
 
 const Cardetails = () => {
+  const [formData, setformData] = useState("")
+  const [formData1, setformData1] = useState("")
+
   return (<>
     <div className={style.container}>
       <div className={style.main}>
@@ -11,12 +15,12 @@ const Cardetails = () => {
         <div className={style.box5}>
         <input  required className="btn btn-primary" type="radio" name="radio" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" />
         <span className={style.card}>Credit Card</span><br />
-        <img style={{ margin: "8px 0px 0px 15px" }} src="./card.png" alt="" />
+        <img style={{ margin: "8px 0px 0px 15px" }} src={process.env.PUBLIC_URL + "/card.png"} alt="" />
         <div className="col">
           <div className="collapse multi-collapse" id="multiCollapseExample2">
             <div className="card card-body">
               <span className={style.box1}>CARD NUMBER*</span>
-              <input  required className={style.box2} type="number" placeholder='XXXX XXXX XXXX XXXX' /><br />
+              <input required className={style.box2} type="number" placeholder='xxxx xxxx xxxx xxxx' value={formData1} onChange={(e)=> formData1.length<16 && setformData1(e.target.value)} /> <br />
               <div style={{ display: "flex", gap: "15px", marginTop: "-20px" }}>
                 <div>
                   <span className={style.box1}>Expiration Date/Month*</span><br />
@@ -55,7 +59,7 @@ const Cardetails = () => {
                 </div>
                 <div>
                   <span className={style.box1}>CVV*</span><br />
-                  <input  required className={style.box3} style={{ width: "27vh", borderRadius: "0px" }} type="number" />
+                  <input  required className={style.box3} style={{ width: "27vh", borderRadius: "0px" }} type="number" placeholder='***' onChange={(e)=> formData.length<3 && setformData(e.target.value)} value={formData}/>
                 </div>
               </div>
             </div>
@@ -87,7 +91,7 @@ const Cardetails = () => {
       {/* <!-- ------------------------second part----------------------------------  --> */}
 
       <div className={style.main2}>
-       {/* <PaymentBox/> */}
+       <PaymentBox title="Order Placed"/>
       </div>
     </div>
 

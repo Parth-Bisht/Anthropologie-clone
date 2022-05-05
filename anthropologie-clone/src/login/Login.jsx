@@ -14,7 +14,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if(formData.first==="" || formData.last==="" || formData.email==="" || formData.password===""){
+    if(formData.first===undefined || formData.last===undefined || formData.email===undefined || formData.password===undefined){
       alert("Fill all Fields")
     }else{
     localStorage.setItem("login",JSON.stringify(formData))     
