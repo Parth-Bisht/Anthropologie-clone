@@ -35,7 +35,7 @@ const Home = () => {
                         <div className='exImg'><img src="https://images.ctfassets.net/5de70he6op10/6fqnRygHuJSypTKaxojLDC/62dd14b7b808b58a09012c535a6bbb8d/041122_HPG_MTE_DenimShop.jpg?w=856&q=80&fm=webp"/></div>
                         <div>
                             <div><h2>Good Jeans: The Denim Fit Guide</h2></div>
-                            <div><h3>Introducing the perfect pairs for every wear. From rise to size, here's how to find your new favorite jeans.</h3></div>
+                            <div><h4>Introducing the perfect pairs for every <em>wear</em>. From rise to size, here's how to find your new favorite jeans.</h4></div>
                         </div>
                         <div className='atag'><a href="">find your fit</a></div>
                     </div>
@@ -43,7 +43,7 @@ const Home = () => {
                         <div className='exImg'><img src="https://images.ctfassets.net/5de70he6op10/5z1SzJjtkNuitP2HKuc7Ww/4f0f76621a8587e50d4b9e96a30edf36/041122_HPG_MTE_GreaterGood.jpg?w=856&q=80&fm=webp"/></div>
                         <div>
                             <div><h2><u>A</u> Greater Good</h2></div>
-                            <div className='h3div'><h3>Our priority: to be a force for good, a greater good, in better service of our planet, its people, and our products.</h3></div>
+                            <div className='h3div'><h4>Our priority: to be a force for good, <em>a greater good</em>, in better service of our planet, its people, and our products.</h4></div>
                         </div>
                         <div className='atag'><a href="">learn more about our journey</a></div>
                     </div>
@@ -51,7 +51,7 @@ const Home = () => {
                         <div className='exImg'><img src="https://images.ctfassets.net/5de70he6op10/54SroRrXp9QpYMEn5Zqrvp/c91bcee7f1aad1f53f8ce017576e8985/041122_HPG_MTE_SpringHomeJournal.jpg?w=856&q=80&fm=webp" /></div>
                         <div>
                             <div><h2>The Story of Home</h2></div>
-                            <div><h3>From front (door) to back(yard), we're reading between the herringbone-inspired lines and handwoven cords of our outdoor collection for spring.</h3></div>
+                            <div><h4>From front (door) to back(yard), we're reading <em>between</em> the herringbone-inspired lines and handwoven cords of our outdoor collection for spring.</h4></div>
                         </div>
                         <div className='atag'><a href="">shop the collection</a></div>
                     </div>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 .upper{
     display: flex;
     gap: 22px;
@@ -140,17 +141,17 @@
 }
 
 p{
-    color: #26262C;
+    color: #63636b;
     font-weight: lighter;
     font-stretch: normal;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     font-family: "Spectral Extra Light", serif;
     margin-bottom: 10px;
     text-align: center;
 }
 .udiv{
-    border-bottom: 1px solid #464649;
+    border-bottom: 1px solid #656569;
     margin-bottom: 30px;
 }
 .exImg > img{
@@ -166,11 +167,15 @@ p{
 }
 .atag > a{
     color: #167a92;
+    font: 0.7rem/1.3 Avenir Book,sans-serif;
+    letter-spacing: .06rem;
 }
 .atag > a:hover{
     text-decoration: none;
+   
 }
-.h3{
-    font: 1.4rem/1.5 Avenir Book,sans-serif;
-    font-style: normal;
+h4, h2{
+    font-family: "Abel", sans-serif;
+    /* font-size: 1.1rem; */
+    font-weight: 100;
 }
