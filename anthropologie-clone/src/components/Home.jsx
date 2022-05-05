@@ -38,8 +38,9 @@ const Home = () => {
             </div>
         </div>
         <div className='middle'><img src="https://images.ctfassets.net/5de70he6op10/7DEijhrVDU6Yq9fW3H4NYu/1ccd807faed448b9ca75bac79944b9c5/050222_HPG_LS_M3.jpg?w=2694&q=80&fm=webp"/><div className='rightBtn'><div className='btn10'><a href="" className='firsta'>visit the getaway shop</a></div></div></div>
-
+        <div className='udivslider'><p>You May Also Like</p></div>
         <Slider data={data} />
+        <div className='udivslider'><p>Trending Now</p></div>
         <Slider data={data1} />
         <div className='lower'>
             <div className='exploreData'>
@@ -48,28 +49,35 @@ const Home = () => {
                     <div>
                         <div className='exImg'><img src="https://images.ctfassets.net/5de70he6op10/6fqnRygHuJSypTKaxojLDC/62dd14b7b808b58a09012c535a6bbb8d/041122_HPG_MTE_DenimShop.jpg?w=856&q=80&fm=webp"/></div>
                         <div>
-                            <div><h2>Good Jeans: The Denim Fit Guide</h2></div>
-                            <div><h4>Introducing the perfect pairs for every <em>wear</em>. From rise to size, here's how to find your new favorite jeans.</h4></div>
+                            <div><h2 className='little'>Good Jeans: The Denim Fit Guide</h2></div>
+                            <div className='h4div'><h4>Introducing the perfect pairs for every <em>wear</em>. From rise to size, here's how to find your new favorite jeans.</h4></div>
                         </div>
                         <div className='atag'><a href="">find your fit</a></div>
                     </div>
                     <div>
                         <div className='exImg'><img src="https://images.ctfassets.net/5de70he6op10/5z1SzJjtkNuitP2HKuc7Ww/4f0f76621a8587e50d4b9e96a30edf36/041122_HPG_MTE_GreaterGood.jpg?w=856&q=80&fm=webp"/></div>
                         <div>
-                            <div><h2><u>A</u> Greater Good</h2></div>
-                            <div className='h3div'><h4>Our priority: to be a force for good, <em>a greater good</em>, in better service of our planet, its people, and our products.</h4></div>
+                            <div><h2 className='little'><u>A</u> Greater Good</h2></div>
+                            <div className='h4div'><h4>Our priority: to be a force for good, <em>a greater good</em>, in better service of our planet, its people, and our products.</h4></div>
                         </div>
                         <div className='atag'><a href="">learn more about our journey</a></div>
                     </div>
                     <div>
                         <div className='exImg'><img src="https://images.ctfassets.net/5de70he6op10/54SroRrXp9QpYMEn5Zqrvp/c91bcee7f1aad1f53f8ce017576e8985/041122_HPG_MTE_SpringHomeJournal.jpg?w=856&q=80&fm=webp" /></div>
                         <div>
-                            <div><h2>The Story of Home</h2></div>
-                            <div><h4>From front (door) to back(yard), we're reading <em>between</em> the herringbone-inspired lines and handwoven cords of our outdoor collection for spring.</h4></div>
+                            <div><h2 className='little'>The Story of Home</h2></div>
+                            <div className='h4div'><h4>From front (door) to back(yard), we're reading <em>between</em> the herringbone-inspired lines and handwoven cords of our outdoor collection for spring.</h4></div>
                         </div>
                         <div className='atag'><a href="">shop the collection</a></div>
                     </div>
                 </div>
+            </div>
+            <div className='about'>
+                <div>
+                    <h2>About Us</h2>
+                    <h4>Our mission at Anthropologie has always been to surprise and delight you with unexpected, distinctive finds for your closet and home. We source and craft all of our products with care, ensuring that any treasure you find at Anthropologie is unique, just like you. Explore our dress shop to find styles and fits perfect for any occasi...</h4>
+                </div>
+                <p className='atag'><a href=''>Read More</a></p>
             </div>
         </div>
     </div>
