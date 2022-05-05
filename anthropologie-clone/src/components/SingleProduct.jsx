@@ -4,8 +4,14 @@ import { AiFillStar } from "react-icons/ai";
 
 const SingleProduct = () => {
   const [data,setData]=React.useState({})
+  const [sidedata,setSidedata] = React.useState([]);
   const handleChange = (e) => {
-    console.log(e.target.value);
+    let inputName = e.target.name;
+    setData({
+      ...data,
+      [inputName]:e.target.value
+    })
+    console.log(inputName,e.target.value);
   };
 
   const [mainimg,setMainimg] = React.useState("");
@@ -13,7 +19,6 @@ const SingleProduct = () => {
     setMainimg(e.target.src);
   }
   React.useEffect(()=>{
-    console.log("Heoeoeoeeo");
     fetch(`http://localhost:3001/cloths/5`)
     .then((res)=>res.json())
     .then((d)=>{
@@ -21,11 +26,24 @@ const SingleProduct = () => {
       setMainimg(d.img2);
     })
     console.log(mainimg);
+    getsidedata();
   },[])
+  function getsidedata(){
+    fetch(`http://localhost:3001/cloths?&_limit=4`)
+    .then((res)=>res.json())
+    .then((d)=>setSidedata(d))
+  }
+
+  const handleSubmit=()=>{
+    let cartData = JSON.parse(localStorage.getItem("cartData")) || []
+    cartData.push(data);
+    localStorage.setItem("cartData",JSON.stringify(cartData))
+    console.log(cartData);
+  }
   return (
     <div>
       <div
-        className="conatiner mt-5 d-flex justify-content-around"
+        className="conatiner my-5 d-flex justify-content-around"
         style={{ width: "1354px" }}
       >
         <div style={{ width: "8%" }}>
@@ -90,7 +108,7 @@ const SingleProduct = () => {
               value="S"
               type="radio"
               className="btn-check"
-              name="btnradio"
+              name="size"
               id="btnradio1"
               autoComplete="off"
             />
@@ -103,7 +121,7 @@ const SingleProduct = () => {
               value="M"
               type="radio"
               className="btn-check"
-              name="btnradio"
+              name="size"
               id="btnradio2"
               autoComplete="off"
             />
@@ -116,7 +134,7 @@ const SingleProduct = () => {
               value="L"
               type="radio"
               className="btn-check"
-              name="btnradio"
+              name="size"
               id="btnradio3"
               autoComplete="off"
             />
@@ -126,7 +144,7 @@ const SingleProduct = () => {
           </div>
 
           <p style={{marginBottom:"3px"}} className={styles.family}>Qty"</p>
-          <select className={styles.select}>
+          <select name="quantity" onChange={handleChange} className={styles.select}>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -134,7 +152,7 @@ const SingleProduct = () => {
             <option value="5">5</option>
           </select>
 
-          <button className={styles.button}>ADD TO BASKET</button>
+          <button onClick={handleSubmit} className={styles.button}>ADD TO BASKET</button>
 
           <div style={{width:"85%"}} className="accordion accordion-flush" id="accordionFlushExample">
             <div className="accordion-item">
@@ -227,18 +245,15 @@ const SingleProduct = () => {
         </div>
 
         <div style={{ width: "6%" }}>
-          <img
+        {sidedata.map((item)=>{
+          return <img
+          key={item.id}
             className="my-2"
-            style={{ width: "100%" }}
-            src={data.img1}
+            style={{ width: "100%",cursor:"pointer" }}
+            src={item.img1}
             alt=""
           />
-          <img
-            className="my-2"
-            style={{ width: "100%" }}
-            src={data.img1}
-            alt=""
-          />
+        })}
         </div>
       </div>
     </div>
