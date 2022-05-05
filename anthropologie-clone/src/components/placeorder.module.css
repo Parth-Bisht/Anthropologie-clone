@@ -5,7 +5,7 @@
     font-family: 'Ubuntu', sans-serif;
 } */
 .cont{
-   
+   text-align: center;
     border: 1px solid rgb(197, 68, 68);
     border-radius: 10px;
     justify-content: center;
