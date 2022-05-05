@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Card from "./Card";
-import styles from "./Card.module.css";
+import Cloth1 from "./Cloth1";
+import styles from "./Cloth.module.css";
 
 const Cloth = () => {
     const [cloths, setCloths] = useState([]);
@@ -42,7 +42,7 @@ const Cloth = () => {
             }}
         >
             {cloths.map((item) => {
-            return <Card key={item.id} item={item} />;
+            return <Cloth1 key={item.id} item={item} />;
             })}
         </div>
         </div>

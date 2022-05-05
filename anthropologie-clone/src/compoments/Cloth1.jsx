@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import styles from "./Card.module.css";
+import styles from "./Cloth.module.css";
 
-function Card({ item }) {
+function Cloth1({ item }) {
   const [ig, setIg] = useState(true);
   const handleHover = () => {
     setIg(!ig);
@@ -40,4 +40,4 @@ function Card({ item }) {
   );
 }
 
-export default Card;
+export default Cloth1;
