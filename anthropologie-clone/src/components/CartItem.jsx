@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './CartItem.module.css';
 
-const CartItem = ({ele}) => {
+const CartItem = ({ele,width}) => {
   return (
     <div>
-       <div className="d-flex align-items-center justify-content-between py-3" style={{width:"65%",position:"relative"}}>
+       <div className="d-flex align-items-center justify-content-between py-3" style={{width:`${width}`,position:"relative"}}>
             <div className={`d-flex ${styles.items}`}>
                 <div style={{width:"34%"}}>
                 <img style={{width:"100%"}} src={ele.img2} alt="" />

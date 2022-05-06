@@ -7,20 +7,27 @@ import { BsHandbag } from "react-icons/bs";
 import { Link, useNavigate } from "react-router-dom";
 import style from './login.module.css'
 import {FaRegEye} from "react-icons/fa"
-import { useDispatch } from "react-redux";
-import { loginSuccess } from "../redux/action";
+import { useDispatch,useSelector } from "react-redux";
+import { loginSuccess,loginFailure } from "../redux/action";
 
 function Navbar() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [formData, setformData] = useState({})
   const [formData1, setformData1] = useState({})
-  const [passtype, setpasstype] = useState(false)
+  const [passtype, setpasstype] = useState(false);
+  const isAuth = useSelector((state)=>state.isAuth);
 
+  const gotohome = ()=>{
+    navigate("/")
+  }
   const handleChange = (e) => {
     const inputName = e.target.name;
     setformData({ ...formData, [inputName]: e.target.value })
      
+  }
+  const handleLogout = ()=>{
+    dispatch(loginFailure())
   }
 
   const handleSubmit = (e) => {
@@ -51,7 +58,7 @@ function Navbar() {
   return (
     <div>
       {/* banner */}
-
+    {/* {console.log(token)} */}
       <div
         id="carouselExampleControls"
         className="carousel slide"
@@ -190,9 +197,9 @@ function Navbar() {
       </div>
     </div>
     {/* <a className="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> */}
-        <div role="button" href="#exampleModalToggle" data-bs-toggle="modal" className={`me-5 ${styles.cont}`}>
+        <div  className={`me-5 ${styles.cont}`}>
           <AiOutlineUser fontSize="24px" color="#2e80a1" />{" "}
-          <span className={styles.spans}>SignIn / SignUp</span>
+          {isAuth?<span onClick={handleLogout} className={styles.spans}>SignOut</span>:<span role="button" href="#exampleModalToggle" data-bs-toggle="modal" className={styles.spans}> SignIn</span>}
         </div>
       </div>
 
@@ -203,7 +210,7 @@ function Navbar() {
         style={{ borderBottom: "1px solid #d3d3d3" }}
       >
         <div className="d-flex  ms-5">
-          <div className="py-3" style={{borderLeft:"1px solid #d3d3d3",borderTop:"3px solid #167a92"}}>
+          <div onClick={gotohome} className="py-3" style={{borderLeft:"1px solid #d3d3d3",borderTop:"3px solid #167a92"}}>
           <a href="" style={{padding:"0px 20px"}}> 
           <img src="https://images.ctfassets.net/5de70he6op10/53ZOE4rRqrxcvv0hg2eSLV/a849085e5f600c618132be2475017746/anthro-logo.svg" alt="" />
           </a>

@@ -8,6 +8,7 @@ const Cardetails = () => {
   const [formData, setformData] = useState("")
   const [formData1, setformData1] = useState("");
   const navigate = useNavigate();
+  const data1 =JSON.parse(localStorage.getItem("data"))
 
   const handlClick = ()=>{
     navigate("/otp")
@@ -71,12 +72,12 @@ const Cardetails = () => {
             </div>
             <div className={style.box4}>
               <h5>Billing Address</h5>
-              <p>first name / last name</p>
-              <p>address</p>
-              <p>alternate address</p>
-              <p>city / previens region / pin code</p>
-              <p>country</p>
-              <p>M.No.</p>
+              <p>{data1.first} {data1.last} </p>
+            <p>{data1.address}</p>
+            <p>{data1.address2}</p>
+            <p>{data1.city} / {data1.province} / {data1.postcode}</p>
+            <p>{data1.country}</p>
+            <p>{data1.phone}</p>
             </div>
           </div>
         </div>
