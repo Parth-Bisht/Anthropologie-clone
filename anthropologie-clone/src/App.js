@@ -1,24 +1,24 @@
 // import './App.css';
-import Cardetails from './payment/Cardetails/Cardetails';
+// import Cardetails from './payment/Cardetails/Cardetails';
 //  import Otp from "./payment/Otp/Otp";
 // import PlaceOrder from './payment/placeOrder/PlaceOrder';
  
 // import ShipDetail from './payment/ShipDetaii/ShipDetail';
-// import Login from "./login/Login"
+import Login from "./login/Login"
 // import Address from './payment/Address';
  
 
 function App() {
   return (<>
    
-    {/* <Login/> */}
+    <Login/>
     {/* <Address/> */}
        
        {/* <ShipDetail/>   */}
  {/* <Otp/> */}
       {/* <PlaceOrder/> */}
       
-       <Cardetails/>
+       {/* <Cardetails/> */}
   </>);
 }
 

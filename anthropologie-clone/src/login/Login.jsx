@@ -1,10 +1,14 @@
 import React, { useState } from 'react'
 import style from './login.module.css'
+ 
+ 
 
 const Login = () => {
+   
   const [formData, setformData] = useState({})
   const [formData1, setformData1] = useState({})
   const [passtype, setpasstype] = useState(false)
+   
 
   const handleChange = (e) => {
     const inputName = e.target.name;
@@ -31,6 +35,7 @@ const Login = () => {
     let data1 = JSON.parse(localStorage.getItem("login"))
     if(data1.email===formData1.email && data1.password===formData1.password1){
       alert("Login Success")
+      // navigate("/Address")
     }else{
       alert("Login Fail")
     }
