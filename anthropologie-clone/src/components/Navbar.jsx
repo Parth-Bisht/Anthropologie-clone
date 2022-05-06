@@ -7,9 +7,12 @@ import { BsHandbag } from "react-icons/bs";
 import { Link, useNavigate } from "react-router-dom";
 import style from './login.module.css'
 import {FaRegEye} from "react-icons/fa"
+import { useDispatch } from "react-redux";
+import { loginSuccess } from "../redux/action";
 
 function Navbar() {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [formData, setformData] = useState({})
   const [formData1, setformData1] = useState({})
   const [passtype, setpasstype] = useState(false)
@@ -39,6 +42,7 @@ function Navbar() {
     let data1 = JSON.parse(localStorage.getItem("login"))
     if(data1.email===formData1.email && data1.password===formData1.password1){
       alert("Sign up Successful")
+      dispatch(loginSuccess("4579438"))
       navigate("/cart")
     }else{
       alert("Login Fail")
