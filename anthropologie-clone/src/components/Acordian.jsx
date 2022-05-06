@@ -48,7 +48,7 @@ const Acordian = () => {
 <div className="accordion accordion-flush" id="accordionFlushExample">
   <div className="accordion-item">
     <p className="accordion-header pricetag" id="flush-headingOne">
-      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+      <button style={{width: "200px"}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
         Price
       </button>
     </p>
@@ -75,7 +75,7 @@ const Acordian = () => {
   </div>
   <div className="accordion-item " >
     <p className="accordion-header" id="flush-headingTwo">
-      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+      <button style={{width: "200px"}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
         Color
       </button>
     </p>
@@ -113,7 +113,7 @@ const Acordian = () => {
   </div>
   <div className="accordion-item">
     <h2 className="accordion-header" id="flush-headingThree">
-      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+      <button style={{width: "200px"}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
         Brand
       </button>
     </h2>
@@ -153,7 +153,7 @@ const Acordian = () => {
 
   <div className="accordion-item">
     <h2 className="accordion-header" id="flush-headingFour">
-      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+      <button style={{width: "200px"}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
         Size
       </button>
     </h2>
@@ -203,7 +203,7 @@ const Acordian = () => {
 
   <div className="accordion-item">
     <h2 className="accordion-header" id="flush-headingFive">
-      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+      <button style={{width: "200px"}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
        In Stoke
       </button>
     </h2>
@@ -221,7 +221,7 @@ const Acordian = () => {
 
   <div className="accordion-item">
     <h2 className="accordion-header" id="flush-headingSix">
-      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+      <button style={{width: "200px"}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
         Free Pickup
       </button>
     </h2>
@@ -243,7 +243,7 @@ const Acordian = () => {
 
 </div>
 
-       
+
     </div>
   )
 }
