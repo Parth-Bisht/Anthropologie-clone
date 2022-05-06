@@ -20,7 +20,8 @@ const SingleProduct = ({id,location}) => {
       setData({
         ...data,
         [inputName]:e.target.value,
-        "total": data.price
+        "total": data.price,
+        "quantity":1
       })
     // }
   };
@@ -49,9 +50,6 @@ const SingleProduct = ({id,location}) => {
     let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
     cartData.push(data);
     localStorage.setItem("cartData",JSON.stringify(cartData));
-    let totalData = JSON.parse(localStorage.getItem("total")) || [];
-    totalData.push(data.price);
-    localStorage.setItem("total",JSON.stringify(totalData));
     
   }
   return (

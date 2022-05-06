@@ -8,16 +8,18 @@ const PaymentBox = (props) => {
   const handleChange =()=>{
     // console.log(ele.id)
     // console.log(ele.price*e.target.value)
-    let data = JSON.parse(localStorage.getItem("total")) || [];
+    // let data = JSON.parse(localStorage.getItem("cartData")) || [];
     // console.log(data)
-    let t = data.reduce(function(acc,ele){
-        return acc + (ele);
+    let t = props.data.reduce(function(acc,ele){
+        return acc + (ele.total);
     },0)
     settTotal(t)
+
+    console.log("Inside payment",props.data);
 }
 useEffect(() => {
   handleChange();
-});
+},[props.data]);
 
   return (
     <div

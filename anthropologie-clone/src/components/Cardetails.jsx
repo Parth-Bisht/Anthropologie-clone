@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
  
 
 const Cardetails = () => {
+  let d = JSON.parse(localStorage.getItem("cartData")) || [];
   const [formData, setformData] = useState("")
   const [formData1, setformData1] = useState("");
   const navigate = useNavigate();
@@ -98,7 +99,7 @@ const Cardetails = () => {
       {/* <!-- ------------------------second part----------------------------------  --> */}
 
       <div className={style.main2}>
-       <PaymentBox top="200px" clickMe={handlClick}title="Order Placed"/>
+       <PaymentBox data={d} top="200px" clickMe={handlClick}title="Order Placed"/>
       </div>
     </div>
 

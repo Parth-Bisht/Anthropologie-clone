@@ -69,3 +69,28 @@
     margin-top: 55px;
     
 }
+.itamTags{
+    width:50%;
+}
+.items{
+    width: 50%;
+}
+.itemsPrice{
+    width: 50%;
+    margin-top:-166px;
+}
+.info{
+    margin-left:20px;
+}
+.info>p{
+    font-size: 14px;
+    margin-bottom: 3px;
+    font-family: 'Roboto', sans-serif;
+}
+.info>p>span{
+   color:#5c5c5f;
+}
+.info>p:nth-child(2){
+    margin-bottom: 15px;
+    color: #a5642d;
+}

@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux';
  
 
 const Address = () => {
+  let d = JSON.parse(localStorage.getItem("cartData")) || [];
   const isAuth = useSelector((state)=>state.isAuth);
   const navigate = useNavigate();
   const [formData, setformData] = useState({})
@@ -133,7 +134,7 @@ const Address = () => {
      
       <div className={style.main2}>
         
-       <PaymentBox top="200px" clickMe={handlClick} title="SHIP TO THIS ADDRESS "/>
+       <PaymentBox data={d} top="200px" clickMe={handlClick} title="SHIP TO THIS ADDRESS "/>
       
       </div>
     </div>

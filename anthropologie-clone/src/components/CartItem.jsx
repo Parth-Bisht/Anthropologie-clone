@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styles from './CartItem.module.css';
 
-const CartItem = ({ele,width}) => {
+const CartItem = ({ele,width,index,handleChange}) => {
+    let local = JSON.parse(localStorage.getItem("cartData"));
     const pri = ele.price;
     const [tot,setTot] = useState(pri)
     const handleQty = (e)=>{
@@ -9,6 +10,16 @@ const CartItem = ({ele,width}) => {
         // console.log(tot);
         setTot(e.target.value*pri);
         console.log(e.target.id);
+        local[index].total=e.target.value*pri;
+        local[index].quantity=e.target.value;
+        localStorage.setItem('cartData', JSON.stringify(local));
+        handleChange(local);
+        console.log(local[index]);
+    }
+    const remove = () => {
+        local.splice(index, 1);
+        localStorage.setItem('cartData', JSON.stringify(local));
+        handleChange(local);
     }
   return (
     <div>
@@ -37,7 +48,7 @@ const CartItem = ({ele,width}) => {
                 </select>
                 <p className="my-0">${tot}</p>
             </div>
-            <div className={`${styles.remove}`}> <a href="">Remove</a> <a href="">Save for Later</a> </div>
+            <div className={`${styles.remove}`}> <p style={{cursor: "pointer",color:"blue",textDecoration:"underline"}} onClick={remove}>Remove</p> <a href="">Save for Later</a> </div>
         </div>
     </div>
   )

@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './Cart.module.css'
 import CartItem from './CartItem';
 import PaymentBox from './Payment';
 
 const Cart = () => {
+  let dat = JSON.parse(localStorage.getItem("cartData")) || [];
+  const [d,setD] = useState(dat)
   const navigate = useNavigate();
   const handlClick = ()=>{
     navigate("/addressPage")
   }
+  const handleChange = (res)=>{
+    setD(res);
+  }
 
-  let data = JSON.parse(localStorage.getItem("cartData")) || [];
+
   return (
     <div>
       <div className="container border py-3" style={{maxWidth:"1325px",position:"relative"}}>
@@ -28,12 +33,12 @@ const Cart = () => {
                 <p className="my-0">Total Price</p>
             </div>
         </div>
-        {data.map((item)=>{
-          return <CartItem key={item.id} width="65%" ele={item}/>
+        {d.map((item , index)=>{
+          return <CartItem handleChange={handleChange} index={index} key={item.id} width="65%" ele={item}/>
         })}
         
         {/* <CartItem/> */}
-        <PaymentBox clickMe={handlClick} title="PROCEED TO CHECKOUT"/>
+        <PaymentBox data={d} clickMe={handlClick} title="PROCEED TO CHECKOUT"/>
       </div>
     </div>
   )

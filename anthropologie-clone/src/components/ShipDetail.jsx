@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom'
 // import { Link } from 'react-router-dom'
 import PaymentBox from './Payment'
 import style from './ShipDetail.module.css'
-import CartItem from './CartItem'
-import styles from './Cart.module.css'
+// import CartItem from './CartItem'
+// import styles from './Cart.module.css'
 
 const ShipDetail = () => {
   const navigate = useNavigate();
@@ -42,17 +42,38 @@ const ShipDetail = () => {
          
          
           <div className="d-flex align-items-center justify-content-between py-3" style={{width:"100%",borderBottom:"1px solid #d3d3d3",borderTop:"1px solid #d3d3d3"}}>
-            <div className={`d-flex justify-content-center align-items-center  ${styles.items}`}>
+            <div className={`d-flex justify-content-center align-items-center  ${style.items}`}>
                 <p className="my-0">Item</p>
             </div>
-            <div className={`d-flex align-items-center justify-content-around ${styles.itemsPrice}`}>
+            <div className={`d-flex align-items-center justify-content-around ${style.itamTags}`}>
                 <p className="my-0">Item price</p>
                 <p className="my-0">Quantity</p>
                 <p className="my-0">Total Price</p>
             </div>
         </div>
         {data.map((item)=>{
-          return <CartItem key={item.id} ele={item} width="100%"/>
+          return <div>
+       <div className="d-flex align-items-center justify-content-between py-3" style={{width:"100%",position:"relative"}}>
+            <div className={`d-flex ${style.items}`}>
+                <div style={{width:"34%"}}>
+                <img style={{width:"100%"}} src={item.img2} alt="" />
+                </div>
+                <div className={style.info}>
+                    <p>{item.title}</p>
+                    <p>Expected to ship on May 26, 2022</p>
+                    <p>Style <span>#69606119</span></p>
+                    <p>Color: <span> BLACK</span></p>
+                    <p>Size: <span>{item.size}</span> </p>
+                </div>
+
+            </div>
+            <div className={`d-flex justify-content-around ${style.itemsPrice}`}>
+                <p className="my-0">${item.price}</p>
+                <p className="my-0">{item.quantity}</p>
+                <p className="my-0">${item.total}</p>
+            </div>
+        </div>
+    </div>
         })}
 
         </div>
@@ -61,7 +82,7 @@ const ShipDetail = () => {
       {/* <!-- ------------------------second part----------------------------------  --> */}
 
       <div className={style.main2}>
-       <PaymentBox top="200px" clickMe={handlClick} title="Continue to Payment"/>
+       <PaymentBox data={data} top="200px" clickMe={handlClick} title="Continue to Payment"/>
      {/* <Link to="/Cardetails">cartdetails</Link> */}
       </div>
     </div>
