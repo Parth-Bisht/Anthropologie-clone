@@ -29,7 +29,7 @@ const Cart = () => {
             </div>
         </div>
         {data.map((item)=>{
-          return <CartItem key={item.id} ele={item}/>
+          return <CartItem key={item.id} ele={item} width="65%"/>
         })}
         
         {/* <CartItem/> */}
