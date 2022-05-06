@@ -1,0 +1,76 @@
+ 
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&family=Montserrat:wght@400;700&family=Ubuntu:wght@300&display=swap');
+*{
+    
+    font-family: 'Ubuntu', sans-serif;
+} */
+.otpBox {
+    width: 40%;
+    margin: auto;
+    margin-top: 12%;
+    padding: 2%;
+    background-color: #9bd9f7;
+    border-radius: 50px;
+}
+
+.inputOTP {
+    display: flex;
+    margin-left: 15%;
+}
+
+.para {
+    font-size: 20px;
+    color: black;
+    margin-right: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.OTP {
+    width: 100px;
+    height: 32px;
+    outline: none;
+}
+.OTP::-webkit-outer-spin-button,
+.OTP::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+.btn {
+    margin: auto;
+    margin-left:25%;
+    background-color: #fa1717;
+    color: rgb(248, 248, 248);
+    width: 250px;
+    height: 32px;
+    font-weight: bolder;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+
+}
+
+.text1 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 3px;
+    letter-spacing: 1.5px;
+}
+
+.text2 {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 1px;
+    font-weight: 400;
+    color: rgb(20, 14, 12);
+    letter-spacing: 0.5px;
+}
+ 

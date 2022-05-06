@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className={styles.maindiv}>
       <div className={styles.emaildiv}>
-          <div>
+          <div style={{marginTop:"23px"}}>
             <p>Sign Up for Email</p>
             <p>Receive early access to new arrivals, sales, exclusive content, events and much more!</p>
           </div>

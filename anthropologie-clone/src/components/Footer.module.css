@@ -2,6 +2,7 @@
     font-family:
 "Avenir Medium", sans-serif;
 background:#f7f6f2;
+margin-top: 40px;
 
 }
 .maindiv>div>div>p:last-child{
@@ -9,9 +10,9 @@ background:#f7f6f2;
     color:#5c5c5f
 }
 
-.maindiv>div>div:first-child{
-    /* width:460px; */
-}
+/* .maindiv>div>div:first-child{
+    width:460px;
+} */
 .maindiv>div>div>p:first-child{
     color:#26262c;
     letter-spacing: 0.6px;
@@ -75,7 +76,6 @@ border-radius:4px;
      font-size:11px;
      color:#5c5c5f;
      margin-left:30px;
-     margin-top: 15px;
 
  }
  .midp>a{

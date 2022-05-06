@@ -10,7 +10,7 @@
     padding-left: 35%;
     padding-top: 10px;
     background-color: white;
-    opacity:0.5;
+    opacity:1;
     color: black;
     font-weight: 400;
 }
@@ -21,9 +21,8 @@
 
 .flex{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 40px;
-   
 }
 
 select{
@@ -35,7 +34,4 @@ select{
 }
 title{
     font-size: 10px;
-}
-.md{
-    width:100%;
 }

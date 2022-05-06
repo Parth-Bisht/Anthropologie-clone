@@ -4,7 +4,7 @@
 }
 .maindiv{
     margin-left:30px;
-    margin-top:80px;
+    width: 25%;
 }
 .firstp{
     font-style: normal;
@@ -169,6 +169,6 @@
 .btdiv4>button>a:hover{
     color:#2689cb;
 }
-.btdiv4>p{
-    width:180px;
+.accordion-button collapsed{ 
+    
 }

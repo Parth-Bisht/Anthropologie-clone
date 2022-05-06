@@ -1,23 +1,23 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
-import Card from "./Card";
-import styles from "./Card.module.css";
+// import axios from "axios";
+import Shoe1 from "./Shoe1";
+import styles from "./Shoe.module.css";
 
-const Cloth = () => {
-    const [cloths, setCloths] = useState([]);
+const Shoe = ({products}) => {
+    const [shoes, setShoes] = useState([]);
 
     const getData = () => {
-        axios.get("http://localhost:3001/cloths").then((res) => {
-        setCloths(res.data);
-        });
+        fetch(`http://localhost:3001/${products}`)
+        .then((res) => res.json())
+        .then((d)=>setShoes(d))
     };
     useEffect(() => {
         getData();
-    }, []);
+    }, [products]);
     return (
-        <div className={styles.md}>
+        <div>
         <div className={styles.flex}>
-            <div className={styles.h}>Women's Clothing</div>
+            <div className={styles.h}>Women's {products}</div>
             <div>
             <label>Sort: </label>
             <select>
@@ -41,12 +41,12 @@ const Cloth = () => {
             marginRight:"40px"
             }}
         >
-            {cloths.map((item) => {
-            return <Card key={item.id} item={item} />;
+            {shoes.map((item) => {
+            return <Shoe1 key={item.id} item={item} location={products} />;
             })}
         </div>
         </div>
     );
 };
 
-export default Cloth;
+export default Shoe;
