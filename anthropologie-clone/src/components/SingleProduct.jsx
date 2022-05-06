@@ -8,20 +8,21 @@ const SingleProduct = ({id,location}) => {
   const handleChange = (e) => {
     let inputName = e.target.name;
    
-    if(e.target.name=='quantity'){
+    // if(e.target.name=='quantity'){
+    //   setData({
+    //     ...data,
+    //     [inputName]:e.target.value,
+    //     "total": e.target.value*data.price
+    //   })
+    //   console.log(e.target.value*data.price)
+    // }
+    // else{
       setData({
         ...data,
         [inputName]:e.target.value,
-        "total": e.target.value*data.price
+        "total": data.price
       })
-      console.log(e.target.value*data.price)
-    }
-    else{
-      setData({
-        ...data,
-        [inputName]:e.target.value
-      })
-    }
+    // }
   };
 
   const [mainimg,setMainimg] = React.useState("");
@@ -45,9 +46,13 @@ const SingleProduct = ({id,location}) => {
   }
 
   const handleSubmit=()=>{
-    let cartData = JSON.parse(localStorage.getItem("cartData")) || []
+    let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
     cartData.push(data);
-    localStorage.setItem("cartData",JSON.stringify(cartData))
+    localStorage.setItem("cartData",JSON.stringify(cartData));
+    let totalData = JSON.parse(localStorage.getItem("total")) || [];
+    totalData.push(data.price);
+    localStorage.setItem("total",JSON.stringify(totalData));
+    
   }
   return (
     <div>
@@ -82,7 +87,7 @@ const SingleProduct = ({id,location}) => {
             <AiFillStar color="#cccccc" />
             <a style={{fontSize:"13px",marginLeft:"5px"}} href="">Write a review</a>
           </div>
-          <p style={{marginBottom:"4px",fontSize:"18px"}}>{data.price}</p>
+          <p style={{marginBottom:"4px",fontSize:"18px"}}>${data.price}</p>
           <p style={{marginBottom:"-7px",fontSize:"13px",color:"#5c5c5f"}}>Or 4 interest-free installments of $58.75 with</p>
           <span>
             {" "}
@@ -152,15 +157,15 @@ const SingleProduct = ({id,location}) => {
             </label>
           </div>
 
-          <p style={{marginBottom:"3px"}} className={styles.family}>Qty"</p>
-          <select name="quantity" onChange={handleChange} className={styles.select}>
+          {/* <p style={{marginBottom:"3px"}} className={styles.family}>Qty"</p> */}
+          {/* <select name="quantity" onChange={handleChange} className={styles.select}>
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
-          </select>
+          </select> */}
 
           <button onClick={handleSubmit} className={styles.button}>ADD TO BASKET</button>
 

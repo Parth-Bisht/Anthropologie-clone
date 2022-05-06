@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './CartItem.module.css';
 
 const CartItem = ({ele,width}) => {
+    const pri = ele.price;
+    const [tot,setTot] = useState(pri)
+    const handleQty = (e)=>{
+        // console.log(e.target.value);
+        // console.log(tot);
+        setTot(e.target.value*pri);
+        console.log(e.target.id);
+    }
   return (
     <div>
        <div className="d-flex align-items-center justify-content-between py-3" style={{width:`${width}`,position:"relative"}}>
@@ -19,15 +27,15 @@ const CartItem = ({ele,width}) => {
 
             </div>
             <div className={`d-flex justify-content-around ${styles.itemsPrice}`}>
-                <p className="my-0">{ele.price}</p>
-                <select>
+                <p className="my-0">${ele.price}</p>
+                <select onChange={handleQty}>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
                 </select>
-                <p className="my-0">{ele.total}</p>
+                <p className="my-0">${tot}</p>
             </div>
             <div className={`${styles.remove}`}> <a href="">Remove</a> <a href="">Save for Later</a> </div>
         </div>

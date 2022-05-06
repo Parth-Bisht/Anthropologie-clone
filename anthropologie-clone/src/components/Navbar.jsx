@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import styles from "./Navbar.module.css";
 import { RiGlobeLine } from "react-icons/ri";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
@@ -17,6 +17,13 @@ function Navbar() {
   const [formData1, setformData1] = useState({})
   const [passtype, setpasstype] = useState(false);
   const isAuth = useSelector((state)=>state.isAuth);
+  const [cart,setCart]=useState([])
+
+  useEffect(()=>{
+    const length = JSON.parse(localStorage.getItem("cartData")) || []
+    setCart(length)
+
+  },[JSON.parse(localStorage.getItem("cartData"))])
 
   const gotohome = ()=>{
     navigate("/")
@@ -246,7 +253,7 @@ function Navbar() {
           </form>
           <Link to="/cart"><BsHandbag color="#2e80a1" fontSize="23px" 
            /> <span className="translate-middle badge rounded-pill bg-danger">
-    0
+    { cart.length==0 ? 0 : cart.length}
     <span className="visually-hidden">unread messages</span>
   </span>
            </Link>

@@ -37,7 +37,7 @@ function Shoe1({ item,location }) {
                 alt="image"
                 />
                 <p>{item.title} </p>
-                <p>{item.price}</p>
+                <p>${item.price}</p>
                 <div className={styles.quick}>Quickshop</div>
             </div>
         </div>

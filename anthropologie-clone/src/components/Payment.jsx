@@ -8,10 +8,10 @@ const PaymentBox = (props) => {
   const handleChange =()=>{
     // console.log(ele.id)
     // console.log(ele.price*e.target.value)
-    let data = JSON.parse(localStorage.getItem("cartData")) || [];
-    console.log(data)
+    let data = JSON.parse(localStorage.getItem("total")) || [];
+    // console.log(data)
     let t = data.reduce(function(acc,ele){
-        return acc + (ele.price * ele.quantity);
+        return acc + (ele);
     },0)
     settTotal(t)
 }
