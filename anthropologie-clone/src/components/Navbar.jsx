@@ -6,6 +6,7 @@ import { AiOutlineUser, AiOutlineSearch } from "react-icons/ai";
 import { BsHandbag } from "react-icons/bs";
 import { Link, useNavigate } from "react-router-dom";
 import style from './login.module.css'
+import {FaRegEye} from "react-icons/fa"
 
 function Navbar() {
   const navigate = useNavigate();
@@ -37,7 +38,7 @@ function Navbar() {
     e.preventDefault()
     let data1 = JSON.parse(localStorage.getItem("login"))
     if(data1.email===formData1.email && data1.password===formData1.password1){
-      alert("Login Success")
+      alert("Sign up Successful")
       navigate("/cart")
     }else{
       alert("Login Fail")
@@ -118,11 +119,11 @@ function Navbar() {
           <span className={styles.spans}> English ($) </span>{" "}
           <MdOutlineKeyboardArrowDown color="#2e80a1" />
         </div>
-        <div className="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabIndex="-1">
+        <div className="modal" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" >
       <div className="modal-dialog modal-dialog-scrollable">
         <div className="modal-content">
           <div className="modal-header">
-            <button type="button" className="btn-close" data-bs-dismiss="modal"  ></button>
+            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
           </div>
           <p className='text-center fs-2 mb-auto'>Sign Up</p>
           <hr />
@@ -138,7 +139,7 @@ function Navbar() {
                 <input  required onChange={handleChange} name="email" type="email" className={style.style3} />
                 <p>PASSWORD</p>
                 <input onChange={handleChange} name="password" type={!passtype ? 'password' : 'text'} className={style.style3} />
-                <i style={{ marginLeft: "-30px", cursor: "pointer" }} className="fa-solid fa-eye" onClick={() => { setpasstype(!passtype) }}></i>
+                <FaRegEye style={{ marginLeft: "-30px", cursor: "pointer" }} onClick={() => { setpasstype(!passtype) }}></FaRegEye>
                 <p></p>
                 <input  required type="submit" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" value="Create" className={style.style4} />
               </form>
@@ -155,7 +156,7 @@ function Navbar() {
 
     {/* --------------------------------sign in------------------------------ */}
 
-    <div className="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabndex="-1">
+    <div className="modal" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"  >
       <div className="modal-dialog modal-dialog-scrollable">
         <div className="modal-content">
           <div className="modal-header">
@@ -170,16 +171,16 @@ function Navbar() {
                 <input  required onChange={handleChange1} name="email" type="email" className={style.style3} />
                 <p>PASSWORD</p>
                 <input  required onChange={handleChange1} name="password1" type={!passtype ? 'password' : 'text'} className={style.style3} />
-                <i style={{ marginLeft: "-30px", cursor: "pointer" }} className="fa-solid fa-eye" onClick={() => { setpasstype(!passtype) }}></i>
+                <FaRegEye style={{ marginLeft: "-30px", cursor: "pointer" }}   onClick={() => { setpasstype(!passtype) }}></FaRegEye>
 
                 <p></p>
-                <input  onSubmit={handleSubmit1} type="submit" value="Sign In" className={style.style4} />
+                <input data-bs-dismiss="modal"  onSubmit={handleSubmit1} type="submit" value="Sign In" className={style.style4} />
               </form>
             </div>
           </div>
           <div className="modal-footer">
             <p className='text-center mx-auto'>If Don't Have An Account Click Create An Account.</p>
-            <button className="btn btn-secondary d-grid col-10 row-2 mx-auto" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">CREATE AN ACCOUNT</button>
+            <button className="btn btn-secondary d-grid col-10 row-2 mx-auto"  data-bs-target="#exampleModalToggle" data-bs-toggle="modal">CREATE AN ACCOUNT</button>
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ const Cardetails = () => {
         <h5>Payment Method</h5>
         <div style={{border:"1px solid"}}>
         <div className={style.box5}>
-        <input  required className="btn btn-primary" type="radio" name="radio" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" />
+        <input type="radio" name="radio" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" />
         <span className={style.card}>Credit Card</span><br />
         <img style={{ margin: "8px 0px 0px 15px" }} src={process.env.PUBLIC_URL + "/card.png"} alt="" />
         <div className="col">
