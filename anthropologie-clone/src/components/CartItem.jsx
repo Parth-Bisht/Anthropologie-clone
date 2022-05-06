@@ -27,7 +27,7 @@ const CartItem = ({ele,width}) => {
                     <option value="4">4</option>
                     <option value="5">5</option>
                 </select>
-                <p className="my-0">{ele.price}</p>
+                <p className="my-0">{ele.total}</p>
             </div>
             <div className={`${styles.remove}`}> <a href="">Remove</a> <a href="">Save for Later</a> </div>
         </div>

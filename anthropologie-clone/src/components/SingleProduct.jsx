@@ -7,10 +7,21 @@ const SingleProduct = ({id,location}) => {
   const [sidedata,setSidedata] = React.useState([]);
   const handleChange = (e) => {
     let inputName = e.target.name;
-    setData({
-      ...data,
-      [inputName]:e.target.value
-    })
+   
+    if(e.target.name=='quantity'){
+      setData({
+        ...data,
+        [inputName]:e.target.value,
+        "total": e.target.value*data.price
+      })
+      console.log(e.target.value*data.price)
+    }
+    else{
+      setData({
+        ...data,
+        [inputName]:e.target.value
+      })
+    }
   };
 
   const [mainimg,setMainimg] = React.useState("");
@@ -143,6 +154,7 @@ const SingleProduct = ({id,location}) => {
 
           <p style={{marginBottom:"3px"}} className={styles.family}>Qty"</p>
           <select name="quantity" onChange={handleChange} className={styles.select}>
+            <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>

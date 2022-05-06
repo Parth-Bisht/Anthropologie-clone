@@ -1,9 +1,24 @@
-import React from "react";
+import React,{ useState,useEffect } from "react";
 import styles from "./PaymentBox.module.css";
  
 
 const PaymentBox = (props) => {
- 
+  const [total, settTotal] = useState(0);
+  
+  const handleChange =()=>{
+    // console.log(ele.id)
+    // console.log(ele.price*e.target.value)
+    let data = JSON.parse(localStorage.getItem("cartData")) || [];
+    console.log(data)
+    let t = data.reduce(function(acc,ele){
+        return acc + (ele.price * ele.quantity);
+    },0)
+    settTotal(t)
+}
+useEffect(() => {
+  handleChange();
+});
+
   return (
     <div
     className={styles.mainDiv}
@@ -16,7 +31,7 @@ const PaymentBox = (props) => {
       <div className="border px-4 py-3">
         <div className={`d-flex justify-content-between ${styles.orderInfo} `}>
           <p>Subtotal</p>
-          <p>$450</p>
+          <p>${total}</p>
         </div>
         <div className={`d-flex justify-content-between ${styles.orderInfo} `}>
           <p>Shipping</p>
@@ -28,7 +43,7 @@ const PaymentBox = (props) => {
         </div>
         <div className={`d-flex justify-content-between ${styles.orderInfo} `}>
           <p style={{ color: "black" }}>Total</p>
-          <p style={{ color: "black" }}>$450</p>
+          <p style={{ color: "black" }}>${total}</p>
         </div>
         <div>
           <button className={styles.button} onClick={()=>props.clickMe()} >{props.title } </button>
