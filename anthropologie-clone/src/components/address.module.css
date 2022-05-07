@@ -1,0 +1,160 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;  
+  
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.font {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+hr.new1 {
+    border: 2px solid rgb(2, 20, 20);
+    margin-top: -2px;
+}
+
+.main {
+    width: 61%;
+    background-color: #ffffff;
+    border: 0px solid;
+    margin-right: 5%;
+}
+
+.main2 {
+    width: 25%; 
+    margin-top: 390px;   
+}
+
+.box1 {
+    font-size: 13px;
+    margin-bottom: 2px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.boxs1 {
+    display: flex;
+    gap: 20px;
+
+}
+
+.boxs2 {
+    height: 46px;
+    width: 113vh;
+    box-sizing: border-box;
+    border: 1px solid #939395;
+    padding: 6px;
+    outline: none;
+    font-size: 16px;
+    margin: 4px 0px 15px 0px;
+}
+
+.boxs2:focus {
+    border-radius: 5px;
+    border: 2px solid teal;
+}
+
+
+
+
+
+
+.box3 {
+    height: 46px;
+    width: 55vh;
+    box-sizing: border-box;
+    border: 1px solid #939395;
+    padding: 6px;
+    outline: none;
+    font-size: 16px;
+    margin: 4px 0px 15px 0px;
+    border-radius: 5px;
+
+}
+
+.box3:focus {
+    border: 2px solid teal;
+}
+.box4{
+    height: 105px;
+    width: 114vh;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    margin: 4px 0px 20px 4.6%;
+    align-items: center;
+    background:#f7f6f2;
+}
+.box4>div>h5{
+    margin: 10px 0px 25px 20px ;
+}
+.box4>div>p{
+    margin: 10px 0px 12px 20px ;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.box4>div>button{
+  height:45px;
+  width: 350px;
+ border: 1px solid;
+ background: white;
+ font-size: 14px;
+ letter-spacing: 1px;
+ 
+
+}
+ 
+.box5 {
+    height: 14px;
+    width: 14px;
+    margin: 4px 5px 15px 0px;
+
+}
+ 
+.box7 {
+    height: 46px;
+    width: 55vh;
+    box-sizing: border-box;
+    padding: 6px;
+    outline: none;
+    font-size: 16px;
+    margin: 4px 0px 15px 0px;
+    border: 1px solid #939395;
+
+}
+
+.box7:focus {
+    border: 2px solid teal;
+    border-radius: 5px;
+}
+.boxs4{
+    
+    width: 114vh;
+    padding: 8px 0px 0px 20px; 
+   
+  
+    border: 1px solid;
+    margin: 4px 0px 20px 4.6%;
+     
+    background:#f7f6f2;
+}
+
+
+
+ 
+ 
+
+
+
+
+ 
