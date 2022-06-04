@@ -40,5 +40,10 @@ Anthropologie is an American clothing retailer with approximately 200 stores acr
 <h1>Creators</h1>
 <ul>
     <li><a href="https://github.com/Parth-Bisht">@Parth Bisht</a></li>
+    <li> <a href="https://github.com/kavish729">@Kavish Chittora</a> </li>
+        <li><a href="https://github.com/ShivamRathore07">@Shivam Rathore</a></li>
+        <li><a href="https://github.com/SonaliBhalerao">@Sonali Bhalerao</a></li>
+        <li><a href="https://github.com/naushadcom">@Md Naushad Ahamed</a></li>
+        <li><a href="https://github.com/Suhani1102">@Suhani</a></li>
 </ul>
 
